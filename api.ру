@@ -1,0 +1,12 @@
+from flask import Flask
+
+app = Flask(api.ру)
+
+@app.route('/')
+def home():
+    return "Привет! Это мой первый сайт на Python!"
+
+@app.route('/about')
+def about():
+    return "А это страница 'О нас'."
+handler = app
